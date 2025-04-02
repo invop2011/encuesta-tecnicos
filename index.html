@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta Técnicos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Diagnóstico de Computadora</h1>
+    <div id="computer-image">
+      <!-- La imagen se cargará dinámicamente con JavaScript -->
+      <img id="image" src="" alt="Computadora">
+    </div>
+    <form id="survey-form">
+      <input type="hidden" id="random-value">
+      <label for="student-id">Número de registro:</label>
+      <input type="text" id="student-id" required>
+      
+      <label for="technician">Selecciona técnico:</label>
+      <select id="technician" required>
+        <option value="joven">Técnico Joven</option>
+        <option value="avanzado">Técnico Avanzado</option>
+      </select>
+      
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="message"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
